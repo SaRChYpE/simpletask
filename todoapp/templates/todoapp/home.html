@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tasks</title>
+</head>
+<body>
+<h1>All tasks: </h1>
+{% for task in tasks %}
+    <h4>{{ task.title }}</h4>
+    <small>Created at: </small><br>
+    <small>{{ task.created }}</small>
+{% endfor %}
+<br><br>
+</body>
+</html>
+
+
